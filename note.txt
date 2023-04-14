@@ -1,0 +1,35 @@
+default file config webpack ada di dist/main.js
+
+custom file hasil configurasi penyimpanan webpack
+#1 di package.json -> "build": "webpack -o ./output --output-filename bundle.js"
+    lalu ketik di terminal 'npm run build'
+
+#2 buat file dengan nama 'webpack.config.js'
+    isi file 
+    di package.json "build": "webpack"
+    lalu ketik di terminal 'npm run build
+
+custom file nama configurasi webpack
+    buat file 'mywebpack.config.js'
+    isi seperti file webpack.config.js
+    di package.json "build": "webpack --config mywebpack.config.js"
+
+cara bundle otomatis jika ada perubahan script(tanpa npm run build)
+#1 di package.json :
+    "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+
+#2 di webpack.config.js 
+     output: {
+        path: path.resolve(__dirname, 'output'),
+        filename: 'bundle.js',
+    },
+    watch: true
+
+cara menerjemahkan file bundle.js/hasil config
+    di package.json :
+        mode: 'development'/'production',
+        devtool: false,
+*jika yg dirubah confignya maka perlu ngebuild lagi
