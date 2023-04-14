@@ -1,3 +1,5 @@
+import * as bootstrap from "bootstrap";
+import { css } from "./style.scss";
 const run = require('./app/app');
 const AlertService = require('./app/alert.service');
 const CalculatorService = require('./app/calculator.service');

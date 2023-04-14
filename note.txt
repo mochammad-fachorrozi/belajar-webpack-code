@@ -33,3 +33,8 @@ cara menerjemahkan file bundle.js/hasil config
         mode: 'development'/'production',
         devtool: false,
 *jika yg dirubah confignya maka perlu ngebuild lagi
+
+
+index.js sebagai pemanggil js atau entry poin, index.html untuk menyimpan halaman web
+
+*webpack ngebaca script dari kanan ke kiri pada file webpack.config css
